@@ -3,7 +3,6 @@ using System;
 using System.ComponentModel.Composition;
 using System.Reflection;
 using System.Threading.Tasks;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Salesforce.VisualStudio.Services.ConnectedService
@@ -12,8 +11,6 @@ namespace Salesforce.VisualStudio.Services.ConnectedService
     [ExportMetadata(Constants.ProviderId, Constants.ProviderIdValue)]
     internal class SalesforceConnectedServiceProvider : ConnectedServiceProvider
     {
-        private BitmapImage icon;
-
         public SalesforceConnectedServiceProvider()
         {
             this.Category = Resources.ConnectedServiceProvider_Category;
