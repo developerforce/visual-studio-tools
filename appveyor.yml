@@ -20,8 +20,10 @@ install:
 before_build:
   - nuget restore
 
-build:
-  project: Salesforce.VisualStudio.Services.sln
+after_build:
+  - cmd: powershell -ExecutionPolicy Bypass scripts\Appveyor-After_Build.ps1
+
+build_script: msbuild Salesforce.VisualStudio.Services.sln /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll" /fl /flp:logfile=MSBuild.log;verbosity=diagnostic
   
 configuration:
   - Release
@@ -34,3 +36,4 @@ artifacts:
     name: $(configuration) VSIX
   - path: src\Salesforce.VisualStudio.Services\bin\$(configuration)\Salesforce.VisualStudio.Services.pdb
     name: $(configuration) PDB
+  - path: MSBuild.log
