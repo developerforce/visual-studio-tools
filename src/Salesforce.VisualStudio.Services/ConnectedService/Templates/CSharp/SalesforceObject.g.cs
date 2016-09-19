@@ -16,7 +16,7 @@ namespace Salesforce.VisualStudio.Services.ConnectedService.Templates.CSharp
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+    #line 1 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "14.0.0.0")]
     public partial class SalesforceObject : SalesforceObjectBase
     {
@@ -30,21 +30,21 @@ namespace Salesforce.VisualStudio.Services.ConnectedService.Templates.CSharp
                     " System.Collections.Generic;\r\nusing System.ComponentModel.DataAnnotations;\r\nusin" +
                     "g System.Linq;\r\nusing System.Text;\r\nusing System.Threading.Tasks;\r\n\r\nnamespace ");
             
-            #line 15 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 15 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(generatedObject.Service.ModelsNamespace));
             
             #line default
             #line hidden
-            this.Write("\r\n{\r\n    public class ");
+            this.Write("\r\n{\r\n    public partial class ");
             
-            #line 17 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 17 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(generatedObject.Model.Name));
             
             #line default
             #line hidden
             this.Write("\r\n    {\r\n");
             
-            #line 19 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 19 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
 // Generate the simple storage properties.
 foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProperties)
@@ -62,7 +62,7 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [Key]\r\n");
             
-            #line 32 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 32 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
     }
 
@@ -74,14 +74,14 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [Display(Name = \"");
             
-            #line 38 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 38 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(storageProperty.Model.Label));
             
             #line default
             #line hidden
             this.Write("\")]\r\n");
             
-            #line 39 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 39 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
     }
 
@@ -94,14 +94,14 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [StringLength(");
             
-            #line 46 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 46 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(storageProperty.Model.Length));
             
             #line default
             #line hidden
             this.Write(")]\r\n");
             
-            #line 47 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 47 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
             break;
         case "phone":
@@ -111,7 +111,7 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [Phone]\r\n");
             
-            #line 52 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 52 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
             break;
         case "email":
@@ -121,7 +121,7 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [EmailAddress]\r\n");
             
-            #line 57 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 57 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
             break;
         case "url":
@@ -131,7 +131,7 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [Url]\r\n");
             
-            #line 62 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 62 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
             break;
     }
@@ -154,14 +154,14 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [");
             
-            #line 79 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 79 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(createableUpdateable));
             
             #line default
             #line hidden
             this.Write("]\r\n");
             
-            #line 80 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 80 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
     }
 
@@ -177,14 +177,14 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        [JsonProperty(\"");
             
-            #line 90 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 90 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(storageProperty.Model.Name));
             
             #line default
             #line hidden
             this.Write("\")]\r\n");
             
-            #line 91 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 91 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
     }
 
@@ -193,21 +193,21 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             #line hidden
             this.Write("        public ");
             
-            #line 94 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 94 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(this.GetFriendlyTypeName(storageProperty)));
             
             #line default
             #line hidden
             this.Write(" ");
             
-            #line 94 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 94 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(propertyName));
             
             #line default
             #line hidden
             this.Write(" { get; set; }\r\n\r\n");
             
-            #line 96 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+            #line 96 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
 }
 
@@ -218,7 +218,7 @@ foreach (GeneratedStorageProperty storageProperty in generatedObject.StorageProp
             return this.GenerationEnvironment.ToString();
         }
         
-        #line 101 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+        #line 101 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
 private string GetFriendlyTypeName(GeneratedStorageProperty storageProperty)
 {
@@ -263,7 +263,7 @@ private string GetFriendlyTypeName(GeneratedStorageProperty storageProperty)
         #line default
         #line hidden
         
-        #line 1 "C:\Repos\visual-studio-tools4\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
+        #line 1 "E:\GitHub\visual-studio-tools\src\Salesforce.VisualStudio.Services\ConnectedService\Templates\CSharp\SalesforceObject.tt"
 
 private global::Salesforce.VisualStudio.Services.ConnectedService.CodeModel.GeneratedObject _generatedObjectField;
 

@@ -69,7 +69,7 @@ namespace Salesforce.VisualStudio.Services.ConnectedService.Utilities
             {
                 string generatedText = generateText(session);
                 string tempFileName = GeneratedCodeHelper.CreateTempFile(generatedText);
-                string targetPath = Path.Combine(outputDirectory, getArtifactName(session) + ".cs");
+                string targetPath = Path.Combine(outputDirectory, getArtifactName(session) + ".Generated.cs");
                 await context.HandlerHelper.AddFileAsync(tempFileName, targetPath);
             }
         }

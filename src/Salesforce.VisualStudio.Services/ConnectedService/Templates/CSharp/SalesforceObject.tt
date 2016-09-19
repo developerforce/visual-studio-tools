@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace <#= generatedObject.Service.ModelsNamespace #>
 {
-    public class <#= generatedObject.Model.Name #>
+    public partial class <#= generatedObject.Model.Name #>
     {
 <#
 // Generate the simple storage properties.
