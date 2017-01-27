@@ -20,8 +20,9 @@
         // Changing it here would break that functionality.
         public const string ProviderId = "Salesforce.ForceDotCom";
 
-        public const string SalesforceApiVersion = "32.0";
-        public const string SalesforceApiVersionWithPrefix = "v32.0";
+        //Updated the version from 32.0 to 37.0
+        public const string SalesforceApiVersion = "37.0";
+        public const string SalesforceApiVersionWithPrefix = "v37.0";
 
         public const string ServiceInstanceNameFormat = "Salesforce{0}";
         public const string ModelsName = "Models";
